@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 20px;
+}
+
+/*Contains <<Input and selector> <button>>*/
+.search-container {
+  width: 90vw;
+  justify-content: space-between;
+  max-width: 400px;
+  display: flex;
+}
+
+/*Contains <Input and selector>*/
+.search-container-2 {
+  width: 77%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 65%;
+}
+
+.search-container select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.search-container button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 325px) {
+  .search-container {
+    flex-direction: column; /* Stacks the child divs on top of each other */
+    gap: 20px;
+  }
+  .search-container-2 {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search-container select {
+    margin-right: 0;
+  }
+}
+
+.cities-selector {
+  width: 90vw;
+  max-width: 400px;
+}
+
+.cities-selector select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.weatherCard-container {
+  width: 90vw;
+  max-width: 400px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.wheatherData-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.each-data-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+}
+
+@media (max-width: 380px) {
+  .wheatherData-container {
+    flex-direction: column; /* Stacks the child divs on top of each other */
+    gap: 20px;
+  }
+
+  .each-data-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .app-container {
+    justify-content: left;
+    margin-top: 30px;
+  }
+}
+
+.loading-cities {
+  color: white;
+}
+
+.loading-data {
+  color: white;
+}
+
+.title {
+  color: white;
+}
