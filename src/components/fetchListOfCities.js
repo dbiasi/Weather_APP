@@ -7,7 +7,7 @@ const fetchListOfCities = async (
   setIsLoadingCities
 ) => {
   setIsLoadingCities(true);
-  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${limit}&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${limit}&appid=${apiKey}`;
   try {
     const response = await fetch(url);
     const data = await response.json();
